@@ -9,7 +9,7 @@ int main()
     scanf("%d", &Changes_Number);
     if ((Changes_Number>0) && (Changes_Number<256))
     {
-        Input_First_Number=(Input_First_Number & 0xFFFF00FF)+(Changes_Number<<8);
+        Input_First_Number=(Input_First_Number & 0xFF00FFFF)+(Changes_Number<<16);
         printf("Output:%d",Input_First_Number);
     }
     else
